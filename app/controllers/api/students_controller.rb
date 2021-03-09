@@ -23,4 +23,19 @@ class Api::StudentsController < ApplicationController
     @student = Student.find_by(id: params[:id])
     render "show.json.jb"
   end
+
+  def update
+    @student = Student.find_by(id: params[:id])
+    @student.name = params[:name] || @student.name
+    @student.width = params[:width] || @student.width
+    @student.height = params[:height] || @student.height
+    @student.save
+    render "show.json.jb"
+  end
+
+  def destroy
+    student = Student.find_by(id: params[:id])
+    student.destroy
+    render json: {message: "Student successfully destroyed."}
+  end
 end

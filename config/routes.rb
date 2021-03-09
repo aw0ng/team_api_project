@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     get "/students" => "students#index"
     get "/students/:id" => "students#show"
     post "/students" => "students#create"
+    patch "/students" => "students#update"
+    delete "/students" => "students#destroy"
+
     post "/sessions" => "sessions#create"
   end
 end
