@@ -13,4 +13,6 @@ class Api::StudentsController < ApplicationController
     end
   end
 
+  def show
+  end
 end
