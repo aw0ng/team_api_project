@@ -19,6 +19,7 @@ class Api::StudentsController < ApplicationController
   end
 
   def show
-
+    @student = Student.find_by(id: params[:id])
+    render "show.json.jb"
   end
 end
