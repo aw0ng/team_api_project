@@ -1,4 +1,9 @@
 class Api::StudentsController < ApplicationController
+  def index
+    @students = Student.all
+    render "index.json.jb"
+  end
+  
   def create
     student = Student.new(
       name: params[:name],
@@ -14,5 +19,6 @@ class Api::StudentsController < ApplicationController
   end
 
   def show
+
   end
 end
