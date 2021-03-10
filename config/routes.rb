@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     delete "/students/:id" => "students#destroy"
 
     post "/sessions" => "sessions#create"
+    get "/skills" => "skills#index"
+    get "/projects" => "projects#index"
   end
 end
