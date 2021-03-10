@@ -16,10 +16,10 @@ Experience.create!(start_date: Date.new(2021, 3, 9), end_date: Date.new(2022, 3,
 Experience.create!(start_date: Date.new(2020, 5, 1), end_date: Date.new(2018, 6, 6), job_title: "Jr. Front End Dev", company_name: "SEA", details: "Doing cool things on the front end", student_id: 2)
 Experience.create!(start_date: Date.new(2018, 4, 2), end_date: Date.new(2018, 1, 1), job_title: "Programming Intern", company_name: "Homeschool", details: "Doing cool things at home", student_id: 3)
 
-Skills.create!(skill_name: "Ruby", student_id: 1)
-Skills.create!(skill_name: "Ruby", student_id: 2)
-Skills.create!(skill_name: "Ruby", student_id: 3)
+Skill.create!(skill_name: "Ruby", student_id: 1)
+Skill.create!(skill_name: "Ruby", student_id: 2)
+Skill.create!(skill_name: "Ruby", student_id: 3)
 
-Projects.create!(name: "Good games", description: "playing video games...gg", url: "goodgamesdotcom", screenshot: "goodgames.png")
-Projects.create!(name: "Wami", description: "student scheduling app", url: "wami.com", screenshot: "work.png")
-Projects.create!(name: "Fit Furiends", description: "keeping your dogs fit", url: "ff.com", screenshot: "healthydogz.png")
+Project.create!(name: "Good games", description: "playing video games...gg", url: "goodgamesdotcom", screenshot: "goodgames.png", student_id: 1)
+Project.create!(name: "Wami", description: "student scheduling app", url: "wami.com", screenshot: "work.png", student_id: 2)
+Project.create!(name: "Fit Furiends", description: "keeping your dogs fit", url: "ff.com", screenshot: "healthydogz.png", student_id: 3)
