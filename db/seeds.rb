@@ -12,6 +12,14 @@ Student.create!(first_name: "Sarah", last_name: "Baranski", email: "sarah@test.c
 
 Student.create!(first_name: "Anna", last_name: "Wong", email: "anna@test.com", password: "password", phone_number: "555-666-7777", short_bio: "Actualize grad ready to fullstack it up", linkedin_url: "linkedin.com/awong", twitter_handle: "https://twitter.com/CodeNewbies", website_url: "hiremenowplease.com", resume_url: "awong.com", github_url: "github.com/awong", photo: "https://avatars.dicebear.com/api/male/anna.svg")
 
-Experience.create!(start_date: Date.new(2021,3,9), end_date: Date.new(2022,3,9), job_title: "Full Stack Developer", company_name: "Google", details: "Doing cool things at Google", student_id: 1)
-Experience.create!(start_date: Date.new(2020,5,1), end_date: Date.new(2018,6,6), job_title: "Jr. Front End Dev", company_name: "SEA", details: "Doing cool things on the front end", student_id: 2)
-Experience.create!(start_date: Date.new(2018,4,2), end_date: Date.new(2018,1,1), job_title: "Programming Intern", company_name: "Homeschool", details: "Doing cool things at home", student_id: 3)
+Experience.create!(start_date: Date.new(2021, 3, 9), end_date: Date.new(2022, 3, 9), job_title: "Full Stack Developer", company_name: "Google", details: "Doing cool things at Google", student_id: 1)
+Experience.create!(start_date: Date.new(2020, 5, 1), end_date: Date.new(2018, 6, 6), job_title: "Jr. Front End Dev", company_name: "SEA", details: "Doing cool things on the front end", student_id: 2)
+Experience.create!(start_date: Date.new(2018, 4, 2), end_date: Date.new(2018, 1, 1), job_title: "Programming Intern", company_name: "Homeschool", details: "Doing cool things at home", student_id: 3)
+
+Skills.create!(skill_name: "Ruby", student_id: 1)
+Skills.create!(skill_name: "Ruby", student_id: 2)
+Skills.create!(skill_name: "Ruby", student_id: 3)
+
+Projects.create!(name: "Good games", description: "playing video games...gg", url: "goodgamesdotcom", screenshot: "goodgames.png")
+Projects.create!(name: "Wami", description: "student scheduling app", url: "wami.com", screenshot: "work.png")
+Projects.create!(name: "Fit Furiends", description: "keeping your dogs fit", url: "ff.com", screenshot: "healthydogz.png")
