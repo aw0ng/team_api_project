@@ -26,9 +26,17 @@ class Api::StudentsController < ApplicationController
 
   def update
     @student = Student.find_by(id: params[:id])
-    @student.name = params[:name] || @student.name
-    @student.width = params[:width] || @student.width
-    @student.height = params[:height] || @student.height
+    @student.first_name = params[:first_name] || @student.first_name
+    @student.last_name = params[:last_name] || @student.last_name
+    @student.email = params[:email] || @student.email
+    @student.phone_number = params[:phone_number] || @student.phone_number
+    @student.short_bio = params[:short_bio] || @student.short_bio
+    @student.linkedin_url = params[:linkedin_url] || @student.linkedin_url
+    @student.twitter_handle = params[:twitter_handle] || @student.twitter_handle
+    @student.website_url = params[:website_url] || @student.website_url
+    @student.resume_url = params[:resume_url] || @student.resume_url
+    @student.github_url = params[:github_url] || @student.github_url
+    @student.photo = params[:photo] || @student.photo
     @student.save
     render "show.json.jb"
   end
