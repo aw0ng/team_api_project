@@ -16,7 +16,7 @@ class Api::ProjectsController < ApplicationController
   end
 
   def update
-    @project = Projecct.find_by(id: params[:id])
+    @project = Project.find_by(id: params[:id])
     @project.name = params[:name] || @project.name
     @project.description = params[:description] || @project.description
     @project.url = params[:url] || @project.url
