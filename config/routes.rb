@@ -20,5 +20,10 @@ Rails.application.routes.draw do
     post "/projects" => "projects#create"
     patch "/projects/:id" => "projects#update"
     delete "/projects/:id" => "projects#destroy"
+
+    get "/educations" => "educations#index"
+    post "/educations" => "educations#create"
+    patch "/educations/:id" => "educations#update"
+    delete "/educations/:id" => "educations#destroy"
   end
 end
