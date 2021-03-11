@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     delete "/students/:id" => "students#destroy"
 
     get "/experiences" => "experiences#index"
+    post "/experiences" => "experiences#create"
+    patch "/experiences/:id" => "experiences#update"
     post "/sessions" => "sessions#create"
     get "/skills" => "skills#index"
     post "/skills" => "skills#create"
