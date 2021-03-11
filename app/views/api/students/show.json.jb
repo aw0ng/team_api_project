@@ -30,7 +30,7 @@
       university_name: education.university_name,
       details: education.details,
     }
-  end
+  end,
   projects: @student.projects.map do |project|
     {
       id: project.id,
@@ -39,11 +39,11 @@
       url: project.url,
       screenshot: project.screenshot
     }
-  end
-  # skills: @student.skills.map do |skill|
-  #   {
-  #     id: skill.id,
-  #     skill_name: skill.skill_name,
-  #   }
-  # end
+  end,
+  skills: @student.skills.map do |skill|
+    {
+      id: skill.id,
+      skill_name: skill.skill_name,
+    }
+  end,
 }
