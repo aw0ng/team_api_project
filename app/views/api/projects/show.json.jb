@@ -1,0 +1,7 @@
+{
+  id: @project.id,
+  name: @project.name,
+  description: @project.description,
+  url: @project.url,
+  screenshot: @project.screenshot,
+}

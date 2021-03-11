@@ -13,6 +13,12 @@ Rails.application.routes.draw do
     get "/experiences" => "experiences#index"
     post "/sessions" => "sessions#create"
     get "/skills" => "skills#index"
+    post "/skills" => "skills#create"
+    patch "/skills/:id" => "skills#update"
+    delete "/skills/:id" => "skills#destroy"
     get "/projects" => "projects#index"
+    post "/projects" => "projects#create"
+    patch "/projects/:id" => "projects#update"
+    delete "/projects/:id" => "projects#destroy"
   end
 end
