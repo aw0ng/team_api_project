@@ -14,8 +14,11 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
     get "/skills" => "skills#index"
     post "/skills" => "skills#create"
-    patch "/skills" => "skills#update"
-    delete "/skills" => "skills#destroy"
+    patch "/skills/:id" => "skills#update"
+    delete "/skills/:id" => "skills#destroy"
     get "/projects" => "projects#index"
+    post "/projects" => "projects#create"
+    patch "/projects/:id" => "projects#update"
+    delete "/projects/:id" => "projects#destroy"
   end
 end
