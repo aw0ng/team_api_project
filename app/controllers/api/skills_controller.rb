@@ -6,6 +6,7 @@ class Api::SkillsController < ApplicationController
 
   def create
     @skill = Skill.new(
+      student_id: params[:student_id], #this is temporarily here until we finalize authorizations
       skill_name: params[:skill_name],
     )
     @skill.save
@@ -22,5 +23,6 @@ class Api::SkillsController < ApplicationController
   def destroy
     skill = Skill.find_by(id: params[:id])
     skill.destroy
-    render json: {message: "Skill successfully destroyed."}
+    render json: { message: "Skill successfully destroyed." }
+  end
 end

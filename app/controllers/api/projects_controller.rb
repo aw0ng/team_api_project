@@ -6,6 +6,7 @@ class Api::ProjectsController < ApplicationController
 
   def create
     @project = Project.new(
+      student_id: params[:student_id], #this is temporarily here until we finalize authorizations
       name: params[:name],
       description: params[:description],
       url: params[:url],
