@@ -3,6 +3,4 @@ class Api::ExperiencesController < ApplicationController
     @experiences = Experience.all
     render "index.json.jb"
   end
-
-  
 end
