@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     get "/experiences" => "experiences#index"
     post "/sessions" => "sessions#create"
     get "/skills" => "skills#index"
+    post "/skills" => "skills#create"
+    patch "/skills" => "skills#update"
+    delete "/skills" => "skills#destroy"
     get "/projects" => "projects#index"
   end
 end
