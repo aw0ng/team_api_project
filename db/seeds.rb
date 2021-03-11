@@ -16,6 +16,7 @@ Experience.create!(start_date: Date.new(2021, 3, 9), end_date: Date.new(2022, 3,
 Experience.create!(start_date: Date.new(2020, 5, 1), end_date: Date.new(2018, 6, 6), job_title: "Jr. Front End Dev", company_name: "SEA", details: "Doing cool things on the front end", student_id: 2)
 Experience.create!(start_date: Date.new(2018, 4, 2), end_date: Date.new(2018, 1, 1), job_title: "Programming Intern", company_name: "Homeschool", details: "Doing cool things at home", student_id: 3)
 
+
 Skill.create!(skill_name: "Ruby", student_id: 1)
 Skill.create!(skill_name: "Ruby", student_id: 2)
 Skill.create!(skill_name: "Ruby", student_id: 3)
@@ -23,3 +24,8 @@ Skill.create!(skill_name: "Ruby", student_id: 3)
 Project.create!(name: "Good games", description: "playing video games...gg", url: "goodgamesdotcom", screenshot: "goodgames.png", student_id: 1)
 Project.create!(name: "Wami", description: "student scheduling app", url: "wami.com", screenshot: "work.png", student_id: 2)
 Project.create!(name: "Fit Furiends", description: "keeping your dogs fit", url: "ff.com", screenshot: "healthydogz.png", student_id: 3)
+
+Education.create!(start_date: Date.new(2016, 4, 1), end_date: Date.new(2020, 1, 1), degree: "Bachelor's in computer science", university_name: "Carnegie Mellon University", details: "Barely passed", student_id: 1)
+Education.create!(start_date: Date.new(2015, 5, 1), end_date: Date.new(2019, 3, 5), degree: "Master's in computer science", university_name: "Massachusetts Institute of Technology", details: "4.0 GPA", student_id: 2)
+Education.create!(start_date: Date.new(2017, 9, 1), end_date: Date.new(2021, 1, 5), degree: "Doctorate in computer science", university_name: "Stanford University", details: "Valedictorian", student_id: 3)
+
